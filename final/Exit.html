@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Thanks for Playing - BrainByte</title>
+    <link rel="icon" type="image/png" href="Robot.png">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Michroma&family=Orbitron:wght@400..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Share+Tech+Mono&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        background: #1f2937;
+        color: white;
+        font-family: "Share Tech Mono", monospace;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        text-align: center;
+      }
+
+      .exit-container {
+        background: #f9fafb;
+        color: #1f2937;
+        padding: 3rem;
+        border-radius: 1.5rem;
+        box-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
+      }
+
+      .exit-container h1 {
+        font-size: 3rem;
+        color: #0073ff;
+      }
+
+      .exit-container p {
+        font-size: 1.5rem;
+        margin: 1rem 0;
+      }
+
+      .exit-buttons {
+        margin-top: 2rem;
+      }
+
+      .exit-buttons a,
+      .exit-buttons button {
+        font-size: 1.2rem;
+        padding: 0.5rem 1.5rem;
+        margin: 0 1rem;
+        border: none;
+        border-radius: 1rem;
+        background-color: white;
+        color: #0073ff;
+        cursor: pointer;
+        font-family: "Exo 2";
+        transition: 0.3s ease;
+        text-decoration: none;
+      }
+
+      .exit-buttons a:hover,
+      .exit-buttons button:hover {
+        background-color: #00ffff;
+        color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="exit-container">
+      <h1>Thank You for Playing!</h1>
+      <p>You’ve taken a byte of brilliance with BrainByte 🧠✨</p>
+      <div class="exit-buttons">
+        <a href="Home.html">Go to Home</a>
+        <button onclick="exitSite()">Exit</button>
+      </div>
+    </div>
+
+    <script>
+      function exitSite() {
+        if (
+          window.confirm(
+            "Browser security may block auto-close.\nPlease close this tab manually."
+          )
+        ) {
+          window.open("", "_self");
+          window.close();
+        }
+      }
+    </script>
+  </body>
+</html>

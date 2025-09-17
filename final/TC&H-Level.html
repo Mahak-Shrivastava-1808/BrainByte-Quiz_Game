@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TC&H-Level</title>
+    <link rel="icon" type="image/png" href="Robot.png">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Michroma&family=Orbitron:wght@400..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Share+Tech+Mono&display=swap"
+        rel="stylesheet">
+        <style>
+            main {
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              justify-content: space-around;
+              /* height: 100vh; */
+              padding-top: 150px;
+              padding-bottom: 70px;
+            }
+      
+            #level-box {
+              height: 100px;
+              width: 700px;
+              display: flex;
+              align-items: center;
+              justify-content: space-around;
+              margin-bottom: 30px;
+            }
+            .level {
+              font-size: 2rem;
+            }
+            .level:hover {
+              font-size: 2.5rem;
+            }
+      
+            .home-btn-container {
+              text-align: center;
+            }
+      
+            .home-btn {
+              background-color: #3d2c9d;
+              color: white;
+              padding: 10px 20px;
+              font-size: 1.5rem;
+              border: none;
+              border-radius: 0;
+              cursor: pointer;
+              font-family: Share Tech Mono;
+            }
+            
+          </style>
+</head>
+
+<body>
+    <header>
+        <div class="nav">
+            <img src="robo.png" alt="Logo" height="90">
+            <div class="title">
+                <span style="color: #0073ff; -webkit-text-stroke: 2px white;">BRAIN</span>
+                <span style="color: #ff006a; -webkit-text-stroke: 2px white;">BYTE</span>
+            </div>
+            <a href="help.html">Help?</a>
+    </header>
+
+    <div class="slogan">
+        <h2>"Step into the game, take a BrainByte, answer the question and shine so bright!"</h2>
+    </div>
+    <main>
+        <div id="level-box">
+            <a href="TC&H-Easy.html"><button class="level"
+                    style="background-color:#00BCD4; color: white; border-radius: 0; font-family: Share Tech Mono;">Beginner</button></a>
+            <a href="TC&H-Medium.html"><button class="level"
+                    style="background-color:#BA68C8; color: white; border-radius: 0; font-family: Share Tech Mono;">Intermediate</button></a>
+            <a href="TC&H-Hard.html"><button class="level"
+                    style="background-color:#EC407A; color: white; border-radius: 0; font-family: Share Tech Mono;">Advance</button></a>
+        </div>
+        <div class="home-btn-container">
+            <a href="Home.html">
+            <button class="home-btn">
+            &larr;Back to home
+            </button>
+        </div>
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,62 @@
+body {
+  font-family: "Share Tech Mono", "Michroma", "Orbitron", "Roboto", "Exo 2", monospace, sans-serif;
+  background: #0f0f0f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.registration-container {
+  background: #F9FAFB;
+  padding: 30px;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.registration-container h2 {
+  color: #3B82F6;
+  font-family: "Exo 2";
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.registration-container form {
+  display: flex;
+  flex-direction: column;
+}
+
+.registration-container label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.registration-container input[type="text"],
+.registration-container input[type="password"] {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.registration-container button {
+  padding: 10px;
+  background-color: #1F2937;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.registration-container button:hover {
+  background-color: #00f2ff;
+  ;
+}
+
+.registration-container p {
+  text-align: center;
+  margin-top: 10px;
+}

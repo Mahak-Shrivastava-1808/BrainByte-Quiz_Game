@@ -1,0 +1,50 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #0f0f0f;
+  color: #00f2ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: 'Orbitron', sans-serif;
+}
+
+.loader-container {
+  text-align: center;
+}
+
+.typewriter-text {
+  font-size: 3rem;
+  letter-spacing: 2px;
+  border-right: 2px solid #00f2ff;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 0;
+  animation: typing 2s steps(10) forwards, blink 0.7s step-end infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 10ch;
+  }
+
+  /* Adjust for length of "Brain Byte" */
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+h2 {
+  margin-top: 20px;
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+  color: #fff;
+}
